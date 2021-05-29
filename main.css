@@ -1,0 +1,169 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    list-style: none;
+}
+
+header{
+    width: 100%;
+
+}
+
+header nav{
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    background:white;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    padding: 10px 15px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+header nav ul li:hover{
+    text-decoration: underline;
+    color: #007c89;
+}
+
+nav .fa{
+    font-size: 25px;
+    padding: 0 10px;
+}
+
+.log{
+    padding: 10px 25px;
+    border: 1px solid black;
+    background: white;
+    margin-right: 5px;
+    margin-right: 10px;
+    
+}
+
+.log:hover{
+    background: rgb(226, 226, 226);
+}
+
+.sign{
+    padding: 10px 20px;
+    border: none;
+    background: #007c89;
+}
+
+.brend{
+    display: flex;
+    padding: 0 10px;
+}
+
+.brend p{
+    font-weight: 900;
+    font-size: 18px;
+    margin:4px 0 0 4px;
+}
+
+.bigMood{
+    width: 100%;
+    height: auto;
+    background:#c5dbf2;
+    align-items: center;
+    display: flex;
+    padding: 60px 0;
+}
+
+.bigMood h1{
+    max-width: 483px;
+    font-size: 54px;
+    font-family: Means Web,Georgia,Times,Times New Roman,serif;
+    font-weight: 300;
+
+}
+
+.bigMood .col-lg-6 .sale{
+    font-size: 23px;
+    font-weight: 300;
+    margin-top: 30px;
+    font-family: Graphik Web,Helvetica Neue,Helvetica,Arial,Verdana,sans-serif;
+}
+
+.bigMood .col-lg-6 .button{
+    margin-top: 40px;
+}
+
+.bigMood .col-lg-6 .button a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 900;
+    padding: 20px 40px;
+    background: #007c89;
+    color: white;
+    
+}
+
+.bigMood .col-lg-6 img{
+    padding-top: 20px;
+}
+
+.layout .audience_data{
+    margin-top: 60px;
+    margin-bottom: 120px;
+    text-align: center;
+    justify-content: center;
+}
+
+.layout .Doit{
+    font-size: 54px;
+}
+
+.intentPath{
+    background: #403b3b;
+    margin: 0 70px 120px 70px ;
+}
+
+.intentPath .h2{
+    font-size: 32px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 20px;
+}
+.intentPath .medium_content{
+    padding: 60px;
+    color: white;
+}
+
+.intentPath .medium_content p{
+    max-width: 363px;
+}
+
+.intentPath .medium_content .coverDishlink{
+    color: yellow;
+    margin-top: 60px;
+}
+
+.help{
+    margin: 60px 70px 60px 70px ; 
+    font-size: 54px; 
+    font-weight: 400;
+}
+
+.module_element{
+    margin: 60px 70px 60px 70px ;
+}
+
+.module_element .module_right{
+    max-width: 483px;
+    padding-left: 80px;
+}
+
+.module_element .module_right p{
+    margin-top: 40px;
+}
+
+.module_element .module_right p a{
+    font-weight: 600;
+    font-size: 16px;
+}
