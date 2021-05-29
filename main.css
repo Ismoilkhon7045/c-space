@@ -9,34 +9,35 @@ header{
 
 }
 
-header nav{
+.header_nav{
     height: 100px;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     background:white;
 }
 
-header nav ul{
+.header_nav ul{
     display: flex;
 }
 
-header nav ul li{
+.header_nav ul li{
     padding: 10px 15px 0;
     font-size: 16px;
     font-weight: 600;
 }
 
-header nav ul li:hover{
+.header_nav ul li:hover{
     text-decoration: underline;
     color: #007c89;
 }
 
-nav .fa{
+.header_nav .nav_form .fa{
     font-size: 25px;
     padding: 0 10px;
 }
 
-.log{
+.button_log_in{
     padding: 10px 25px;
     border: 1px solid black;
     background: white;
@@ -45,22 +46,23 @@ nav .fa{
     
 }
 
-.log:hover{
+.button_log_in:hover{
     background: rgb(226, 226, 226);
 }
 
-.sign{
+.button_sign_in{
     padding: 10px 20px;
     border: none;
     background: #007c89;
 }
 
-.brend{
+.nav_logo{
     display: flex;
     padding: 0 10px;
+    align-items: center;
 }
 
-.brend p{
+.nav_logo .nav_logo_description{
     font-weight: 900;
     font-size: 18px;
     margin:4px 0 0 4px;
@@ -166,4 +168,4 @@ nav .fa{
 .module_element .module_right p a{
     font-weight: 600;
     font-size: 16px;
-}
+}   
