@@ -239,8 +239,20 @@ header {
 .container_whelp{
     display: flex;
     align-items: center;
+    padding: 60px 0;
 }
 .container_whelp_right{
     max-width: 400px;
     padding-left: 80px;
+}
+.container_whelp_right_title{
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 1.1;
+}
+.container_whelp_right_description{
+    font-size: 19px;
+    line-height: 1.35;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
