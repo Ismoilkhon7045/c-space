@@ -179,10 +179,10 @@ header {
 }
 
 .sectionGetbusiness {
-    max-width: 1200px;
+    max-width: 970px;
     margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding-bottom: 7.5rem;
 
 }
@@ -196,6 +196,7 @@ header {
 .sectionGetbusiness_container_left {
     padding-right: 110px;
     line-height: 1.35;
+    text-align: left;
 }
 
 .sectionGetbusiness_container_h2Title {
@@ -205,7 +206,7 @@ header {
 }
 
 .sectionGetbusiness_container_description {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     letter-spacing: 1px;
     padding: 20px 0 20px 0;
@@ -261,6 +262,7 @@ header {
     background: #f6f6f4;
     text-align: center;
 }
+
 .grow_container{
     max-width: 970px;
     margin: auto;
@@ -284,4 +286,106 @@ header {
 .growBlock_description{
     font-size: 18px;
     font-weight: 400;
+}
+.forward{
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.imgcard{
+    width: 250px;
+    padding-top: 90px;
+}
+.forward_Title{
+    width: 483px;
+    font-size: 54px;
+    margin: auto;
+}
+.blockTitle{
+     font-size: 1.5rem;
+     margin-bottom: 20px;
+     margin-top: 30px;
+}
+.blockdescription{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin-bottom: 1.875rem;
+}
+.blockbtn{
+    font-size: 16px;
+    font-weight: 400;
+    background-color: white;
+    border: none;
+    color: teal;
+}
+.blockbtn:hover{
+    text-decoration: underline;
+    color: rgb(1, 80, 80);
+    cursor: pointer;
+}
+.blockbtn1{
+    font-size: 16px;
+    font-weight: 400;
+    background-color: white;
+    border: none;
+    color: teal;
+    margin-top: 30px;
+}
+.blockbtn1:hover{
+    text-decoration: underline;
+    color: rgb(1, 80, 80);
+    cursor: pointer;
+}
+.comes{
+    width: 100%;
+    background: #fbeeca;
+    padding-bottom: 200px;
+}
+.comesTtitle{
+    width: 550px;
+    margin: auto;
+    font-size: 58px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    line-height: 1;
+    
+}
+.aboutMagazine {
+    width: 400px;
+    line-height: 1.35;
+    padding-left: 70px;
+}
+.aboutMagazine1{
+    width: 400px;
+    line-height: 1.35;
+    padding-right: 70px;
+}
+.magazine_description{
+    padding-top: 20px;
+    font-size: 18px;
+}
+.comesBottom{
+    width: 600px;
+    margin: auto;
+    text-align: center;
+}
+.comesBottomtitle{
+    font-size: 45px;
+}
+.comesBottomdescription{
+    font-size: 18px;
+    padding: 20px 0 30px 0;
+    line-height: 1.35;
+}
+.address{
+    width: 970px;
+    margin: auto;
+}
+.addressImg{
+    text-align: center;
+    margin-top: -225px;
 }
