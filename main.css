@@ -39,9 +39,13 @@ header {
     display: flex;
     gap: 15px;
 }
-
+@media (max-width: 1100px) {
+    .header_nav ul{
+        display: none;
+    }
+}
 .header_nav ul li a {
-    width: 70px;
+    max-width: 70px;
     padding: 12px;
     font-size: 16px;
     font-weight: 400;
@@ -59,9 +63,17 @@ header {
     font-size: 25px;
     padding: 0 4px;
 }
+.sidenav{
+    display: none;
+}
+@media (max-width: 1100px) {
+    .sidenav{
+        display: block;
+    }
+}
 
 .button_log_in {
-    width: 98px;
+    max-width: 98px;
     padding: 12px 16px;
     border: 1px solid black;
     background: white;
@@ -85,7 +97,6 @@ header {
 }
 
 .button_sign_in a {
-    width: 188px;
     font-size: 16px;
     font-weight: 400;
     padding: 12px 16px;
@@ -158,7 +169,7 @@ header {
 }
 
 .sectionDoit_container {
-    width: 645px;
+    max-width: 645px;
     margin: auto;
     padding: 120px 0;
     text-align: center;
@@ -294,11 +305,11 @@ header {
     padding-bottom: 40px;
 }
 .imgcard{
-    width: 250px;
+    max-width: 250px;
     padding-top: 90px;
 }
 .forward_Title{
-    width: 483px;
+    max-width: 483px;
     font-size: 54px;
     margin: auto;
 }
@@ -344,7 +355,7 @@ header {
     padding-bottom: 200px;
 }
 .comesTtitle{
-    width: 550px;
+    max-width: 550px;
     margin: auto;
     font-size: 58px;
     font-weight: 300;
@@ -355,12 +366,12 @@ header {
     
 }
 .aboutMagazine {
-    width: 400px;
+    max-width: 400px;
     line-height: 1.35;
     padding-left: 70px;
 }
 .aboutMagazine1{
-    width: 400px;
+    max-width: 400px;
     line-height: 1.35;
     padding-right: 70px;
 }
@@ -369,7 +380,7 @@ header {
     font-size: 18px;
 }
 .comesBottom{
-    width: 600px;
+    max-width: 600px;
     margin: auto;
     text-align: center;
 }
@@ -382,10 +393,296 @@ header {
     line-height: 1.35;
 }
 .address{
-    width: 970px;
+    max-width: 970px;
     margin: auto;
+    padding-bottom: 50px;
 }
 .addressImg{
     text-align: center;
     margin-top: -225px;
+}
+.addreddDate{
+    max-width: 370px;
+    
+    
+}
+.addressBottom{
+    display: flex;
+    margin: 30px 0 30px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.dateDescription{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.dateName{
+    font-size: 13px;
+    color: #727070;
+    padding-bottom: 30px;
+}
+.dateProt{
+    display: flex;
+}
+.addressNum{
+    max-width: 130px;
+}
+.prot{
+    font-size: 50px;
+}
+.numDescription{
+    font-size: 16px;
+    line-height: 1.35;
+    padding-bottom: 20px;
+}
+.software{
+    width: 100%;
+    background: #f6f6f4;
+    padding:120px 0 250px 0;
+}
+.softwareMain{
+    max-width: 480px;
+    margin: auto;
+    text-align: center;
+}
+.softwareDescription{
+    font-size: 54px;
+    padding-bottom: 20px;
+}
+.btnSoftware{
+    font-size: 15px;
+    background: transparent;
+    padding: 20px 40px;
+    color: #007c89;
+    border: 1px solid #007c89;
+}
+.resources{
+    max-width: 970px;
+    margin: auto;
+    
+}
+.resourcesImg {
+    max-width: 500px;
+    margin: -250px auto auto auto;
+}
+.resourcesMain{
+    max-width: 725px;
+    margin: auto;
+    text-align: center;
+}
+.resourcesTitle{
+    font-size: 55px;
+    font-weight: 300;
+    margin-top: 30px;
+
+}
+.resourcesDescription{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.resourcesCard{
+    max-width: 1150px;
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    gap: 10px;
+
+}
+.webinarCard{
+    width: 100%;
+    background-color: #d8eacc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.webinarCardcentre{
+    max-width: 370px;
+}
+.presentsCard{
+    max-width: 372px;
+    border: 1px solid black;
+}
+
+.webinarName{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.webinarTitle{
+    
+    font-size: 56px;
+    font-weight: 300;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2.5rem;
+}
+.webinarDescription{
+    font-size: 16px;
+    margin-bottom: 40px;
+    line-height: 1.35;
+    letter-spacing: 1px;
+    color:#241c15;
+}
+.btnWebinar{
+    margin: auto;
+    padding: 20px 40px;
+    background: #007c89;
+    color: white;
+    font-weight: 600;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+.presentsInfo{
+    padding: 24px;
+}
+.presentsLogo{
+    font-size: 16px;
+    padding-bottom: 35px;
+}
+.presentsName{
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+.presentsTitle{
+    font-size: 36px;
+    font-weight: 300;
+    padding-bottom: 15px;
+}
+.presentsDescription{
+    font-size: 16px;
+    line-height: 1.5;
+    padding-bottom: 15px;
+}
+.presentsLink{
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+.courierMain{
+    max-width: 1150px;
+    display: flex;
+}
+.courier{
+    max-width: 350px;
+    padding: 20px;
+    color: white;
+    object-fit: cover;
+    background-size: cover;
+    background-image: url("https://eep.io/images/yzco4xsimv0y/BReNgBS5yKvZWRHihQG8f/6d75f3d62df93067535426019e42cef4/Homepage-Grid-5.18-courier.jpg?w=780");
+}
+.courierName{
+    font-size: 16px;
+    padding-top: 80px;
+    padding-bottom: 15px;
+}
+.courierDescription{
+    font-size: 36px;
+    padding-bottom: 40px;
+    font-weight: 300;
+
+}
+.courierLogo{
+    max-width: 130px;
+}
+.courierLink{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-family: "Helvetica Neue", sans-serif;
+}
+.tips{
+    width: 100%;
+    background: #fdece5;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.tipsImg{
+    padding: 30px;
+}
+.tipsInfo{
+    width: 280px;
+    padding-top: 60px;
+    margin: 15px;
+}
+.tipsName{
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+.tipsTitle{
+    font-size: 34px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+.tipsDescription{
+    font-size: 16px;
+    line-height: 1.35;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+.smallstep{
+    width: 100%;
+    background: #ffe01b;
+    text-align: center;
+    padding: 120px 0px;
+    margin-top: 40px;
+}
+.smallstepTitle{
+    font-size: 74px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+.smallstepDescription{
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding-bottom: 40px;
+}
+.blockHidden{
+    width: 356px;
+    background: white;
+    padding: 40px 32px;
+    
+}
+.blockHiddenflexTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    padding-bottom: 20px;
+}
+.blockHiddenflex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.blockLink{
+    font-size: 18px;
+    padding: 12px 0;
+}
+.updates{
+    padding:35px 0;
+}
+.updatesTitle{
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+.updatesDescription{
+    font-size: 12px;
+    line-height: 1.35;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+.updatesLinkmain{
+    display: flex;
+}
+.updatesLink{
+    font-size: 12px;
+    color: #007c89;
+    text-decoration: none;
 }
