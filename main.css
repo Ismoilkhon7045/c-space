@@ -659,10 +659,23 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;    
+    padding: 12px 0;
 }
+.blockHiddenflex:hover .blockLink , .imgIcon svg{
+    color: blue;
+    fill:blue;
+}
+.imgIcon svg{
+    fill: black;
+}
+
 .blockLink{
     font-size: 18px;
-    padding: 12px 0;
+    text-decoration: none;
+    color: black;
+}
+.blockHiddenflex:hover ~ .blockLink{
+    color: #007c89;
 }
 .updates{
     padding:35px 0;
@@ -680,6 +693,8 @@ header {
 }
 .updatesLinkmain{
     display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .updatesLink{
     font-size: 12px;
