@@ -8,6 +8,9 @@
 header {
     width: 100%;
     position: fixed;
+    top: 0%;
+    right: 0%;
+    left: 0%;
 }
 
 .header_items {
@@ -40,6 +43,7 @@ header {
     gap: 15px;
 }
 @media (max-width: 1100px) {
+
     .header_nav ul{
         display: none;
     }
@@ -64,7 +68,10 @@ header {
     padding: 0 4px;
 }
 .sidenav{
+    width: 50px;
+    height: 50px;
     display: none;
+    padding-left: 15px;
 }
 @media (max-width: 1100px) {
     .sidenav{
@@ -121,7 +128,7 @@ header {
 
 .sectionMarketing {
     width: 100%;
-    height: 700px;
+    height: auto;
     align-items: center;
     display: flex;
     background-color: #ffe01b;
@@ -129,6 +136,7 @@ header {
 
 .sectionMarketing_container {
     max-width: 970px;
+    padding: 120px 0;
     margin: auto;
     display: flex;
     align-items: center;
@@ -141,6 +149,7 @@ header {
     font-weight: 300;
     margin-top: 30px;
 }
+
 
 .sectionMarketing_container_description {
     max-width: 440px;
@@ -159,6 +168,9 @@ header {
     color: white;
     font-weight: 600;
     line-height: 1.35;
+}
+@media (max-width:960px){
+    
 }
 
 .sectionDoit{
@@ -233,6 +245,10 @@ header {
 
 .btn_sectionGetbusiness_left:hover{
     border-color:#036874 ; 
+}
+
+.img_right{
+    max-width: 450px;
 }
 
 .btn_sectionGetbusiness_left_description {
@@ -352,6 +368,7 @@ header {
 .comes{
     width: 100%;
     background: #fbeeca;
+
     padding-bottom: 200px;
 }
 .comesTtitle{
@@ -645,10 +662,21 @@ header {
 }
 .blockHidden{
     width: 356px;
+    height: 100%;
     background: white;
     padding: 40px 32px;
-    
+    position: fixed;
+    z-index: 10;
+    transform: translateX(-100%);
+    transition: 0.3s;
 }
+
+.blockShown {
+    transform: translateX(0);
+    transition: 0.3s;
+ }
+
+
 .blockHiddenflexTop{
     display: flex;
     justify-content: space-between;
@@ -679,6 +707,8 @@ header {
 }
 .updates{
     padding:35px 0;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
 }
 .updatesTitle{
     font-size: 15px;
@@ -696,8 +726,91 @@ header {
     align-items: center;
     gap: 10px;
 }
+
 .updatesLink{
     font-size: 12px;
     color: #007c89;
     text-decoration: none;
+}
+
+.btnLogin{
+    width: 150px;
+    padding: 12px 16px ;
+    background: transparent;
+    border: 1px solid black;
+}
+.updatesForm{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+.btnSignin{
+    width: 150px;
+    padding: 12px 16px ;
+    background: #036874;
+    border: none;
+}
+
+@media (max-width: 1100px) {
+    .sectionMarketing_container {
+        max-width: 970px;
+        flex-wrap: wrap;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .sectionMarketing_container_h1Title {
+        max-width: 780px;
+        font-size: 3.375rem;
+        line-height: 1;
+        font-weight: 300;
+        margin-top: 30px;
+    }
+    .sectionMarketing_container_description {
+        max-width: 780px;
+        font-size: 24px;
+        font-weight: 300;
+        margin-top: 30px;
+        line-height: 1.4;
+        margin-bottom: 30px;
+    }
+    .sectionMarketing_container_right img{
+        width: 780px;
+    }
+    .sectionDoit_container,.sectionDoit_container_center{
+        max-width: 780px;
+    }
+    
+    .sectionGetbusiness_container{
+        max-width: 780px;
+        flex-wrap: wrap;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .sectionGetbusiness_container_left{
+        max-width: 780px;
+        order: 2;
+        padding: 0;
+        
+    }
+    .sectionGetbusiness_container_h2Title{
+        max-width: 780px;
+    }
+    .sectionGetbusiness_container_description{
+        max-width: 780px;
+    }
+    .sectionGetbusiness_container_right_img img{
+        max-width: 780px;
+        order: 1;
+    }
+    
+    .comesTtitle{
+        max-width: 780px;
+        margin: auto;
+    }
 }
