@@ -3,10 +3,11 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    box-sizing: border-box;
 }
 
 header {
-    width: 100%;
+    max-width: 100%;
     position: fixed;
     top: 0%;
     right: 0%;
@@ -18,6 +19,7 @@ header {
 }
 
 .header_nav {
+    max-width: 100%;
     height: 80px;
     align-items: center;
     display: flex;
@@ -42,12 +44,7 @@ header {
     display: flex;
     gap: 15px;
 }
-@media (max-width: 1100px) {
 
-    .header_nav ul{
-        display: none;
-    }
-}
 .header_nav ul li a {
     max-width: 70px;
     padding: 12px;
@@ -72,11 +69,6 @@ header {
     height: 50px;
     display: none;
     padding-left: 15px;
-}
-@media (max-width: 1100px) {
-    .sidenav{
-        display: block;
-    }
 }
 
 .button_log_in {
@@ -159,6 +151,12 @@ header {
     line-height: 1.4;
     margin-bottom: 30px;
 }
+.sectionMarketing_container_right{
+    max-width: 450px;
+}
+.sectionMarketing_container_right img{
+    width: 100%;
+}
 
 .btn_sectionMarketing_left {
     padding: 20px 40px;
@@ -168,9 +166,6 @@ header {
     color: white;
     font-weight: 600;
     line-height: 1.35;
-}
-@media (max-width:960px){
-    
 }
 
 .sectionDoit{
@@ -217,7 +212,8 @@ header {
 }
 
 .sectionGetbusiness_container_left {
-    padding-right: 110px;
+    width: 50%;
+    padding-right: 70px;
     line-height: 1.35;
     text-align: left;
 }
@@ -239,16 +235,19 @@ header {
 .btn_sectionGetbusiness_left {
     padding: 20px 40px;
     background: transparent;
-    border-color: #007c89;
+    border: 1px solid #007c89;
     cursor: pointer;
 }
 
 .btn_sectionGetbusiness_left:hover{
     border-color:#036874 ; 
 }
-
-.img_right{
+.sectionGetbusiness_container_right_img{
     max-width: 450px;
+}
+.img_right{
+    width: 100%;
+    padding: 20px;
 }
 
 .btn_sectionGetbusiness_left_description {
@@ -257,20 +256,26 @@ header {
 }
 .whelp{
     max-width: 970px;
-    margin: auto;
+    margin: auto; 
+}
+.container_whelp_left{
+    max-width: 400px;
+}
+.whelpImg{
+    width: 100%;
 }
 .whelp_descriptionTitle{
     font-size: 3.375rem;
     line-height: 1;
-    padding: 40px 0px 50px 0px;
+    padding: 40px 0px 50px 20px;
 }
 .container_whelp{
     display: flex;
     align-items: center;
-    padding: 60px 0;
+    padding: 60px 20px;
 }
 .container_whelp_right{
-    max-width: 400px;
+    max-width: 50%;
     padding-left: 80px;
 }
 .container_whelp_right_title{
@@ -284,6 +289,7 @@ header {
     margin-top: 40px;
     margin-bottom: 30px;
 }
+
 .grow{
     width: 100%;
     background: #f6f6f4;
@@ -400,6 +406,7 @@ header {
     max-width: 600px;
     margin: auto;
     text-align: center;
+    padding: 0 20px;
 }
 .comesBottomtitle{
     font-size: 45px;
@@ -414,8 +421,12 @@ header {
     margin: auto;
     padding-bottom: 50px;
 }
+.imgMain{
+    
+    display: flex;
+    justify-content: center;
+}
 .addressImg{
-    text-align: center;
     margin-top: -225px;
 }
 .addreddDate{
@@ -423,6 +434,14 @@ header {
     
     
 }
+.peopleMain{
+    max-width: 420px;
+}
+
+.peopleImg{
+    max-width: 100%;
+}
+
 .addressBottom{
     display: flex;
     margin: 30px 0 30px 0;
@@ -481,6 +500,9 @@ header {
 .resourcesImg {
     max-width: 500px;
     margin: -250px auto auto auto;
+}
+.resourcesImg img{
+    width: 100%;
 }
 .resourcesMain{
     max-width: 725px;
@@ -641,7 +663,7 @@ header {
     font-size: 16px;
     line-height: 1.35;
     letter-spacing: 1px;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
 }
 .smallstep{
     width: 100%;
@@ -658,7 +680,7 @@ header {
 .smallstepDescription{
     font-size: 24px;
     letter-spacing: 1px;
-    padding-bottom: 40px;
+    padding:0 20px 40px 20px;
 }
 .blockHidden{
     width: 356px;
@@ -751,6 +773,9 @@ header {
     border: none;
 }
 
+
+
+
 @media (max-width: 1100px) {
     .sectionMarketing_container {
         max-width: 970px;
@@ -760,6 +785,13 @@ header {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+    
+    .sidenav{
+        display: block;
+    }
+    .header_nav ul{
+        display: none;
     }
     .sectionMarketing_container_h1Title {
         max-width: 780px;
@@ -776,11 +808,16 @@ header {
         line-height: 1.4;
         margin-bottom: 30px;
     }
-    .sectionMarketing_container_right img{
-        width: 780px;
+    .sectionMarketing_container_left{
+        padding: 0 20px;
     }
-    .sectionDoit_container,.sectionDoit_container_center{
+    .sectionMarketing_container_right img{
         max-width: 780px;
+        padding-top: 30px;
+    }
+    .sectionDoit_container_center{
+        max-width: 770px;
+        padding: 0 30px;
     }
     
     .sectionGetbusiness_container{
@@ -793,9 +830,10 @@ header {
         
     }
     .sectionGetbusiness_container_left{
-        max-width: 780px;
+        width: 100% ;
         order: 2;
-        padding: 0;
+        padding: 0 20px;
+
         
     }
     .sectionGetbusiness_container_h2Title{
@@ -804,13 +842,240 @@ header {
     .sectionGetbusiness_container_description{
         max-width: 780px;
     }
-    .sectionGetbusiness_container_right_img img{
+    .sectionGetbusiness_container_right_img{
         max-width: 780px;
-        order: 1;
+    }
+    .img_right{
+        width: 100% !important;
     }
     
     .comesTtitle{
         max-width: 780px;
         margin: auto;
     }
+    .aboutMagazine{
+        max-width: 780px;
+    }
+    .aboutMagazine1{
+        max-width: 780px;
+        order: 2;
+    }
+    .addressBottom{
+        max-width: 780px;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .addreddDate{
+        max-width: 780px;
+        order: 2;
+        padding: 0 20px ;
+    }
+    
+    .adressImg{
+        width: 780px;
+        order: 1;
+        padding: 60px 0;
+    }
+    .peopleMain{
+        max-width: 970px;
+    }
+    
+    .peopleImg{
+        max-width: 100%;
+    }
+    .softwareMain{
+        max-width: 780px;
+    }
+    .resourcesCard{
+        flex-wrap: wrap;
+        
+    }
+    .webinarCard{
+        max-width: 780px;
+        margin: auto;
+        padding: 120px 0;
+    }
+    .presentsCard{
+        max-width: 780px;
+        margin: auto;
+    }
+    .presentsImg{
+        width: 100%;
+    }
+    .addressImg{
+        max-width: 450px;
+        padding: 0 20px;
+    }
+    .courierMain{
+        max-width: 780px;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+    .courier{
+        max-width: 780px;
+        margin: 30px 0;
+        order: 1;
+        padding: 70px;
+    }
+    .tips{
+        max-width: 780px;
+        margin: auto;
+        order: 2;
+        flex-wrap: wrap;
+        
+    }
+    .courierLogo{
+        max-width: 780px;
+    }
+    .tipsImgcard{
+        margin: auto;
+    }
+    .tipsImg{
+        width: 550px;
+    }
+    .tipsInfo{
+        width: 780px;
+        padding: 30px;
+    }
+    
+    .tipsDescription{
+       max-width: 680px;
+       font-size: 18px;
+       line-height: 1.5;
+    }
+    .button_sign_in{
+        display: none;
+    }
+    .button_log_in{
+        border: none;
+        padding:0;
+    }
+    .fa-search{
+        display: none;
+    }
+    .header{
+        max-width: 1200px;
+    }
+    .header_nav{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .fa-shopping-cart{
+        display: none;
+    }
+    .sectionMarketing_container_h1Title{
+        font-size: 45px;
+    }
+    .nav_form{
+        padding: 0 30px;
+    }
+    
+    .imgMain{
+        max-width: 350px;
+        margin: auto;
+    }
+    .addressImg{
+        width: 100%;
+        
+    }
+    .softwareDescription{
+        font-size: 34px;
+        padding: 0 20px 20px 20px;
+    }
+    .sectionMarketing_container_right img{
+        max-width: 350px;
+    }
+    .tipsImg{
+        max-width: 350px;
+    }  
+    .aboutMagazine{
+        width: 100%;
+        padding: 0 20px;
+    } 
+    .aboutMagazine1{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .container_whelp{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .container_whelp_left{
+        max-width: 540px;
+    }
+    .whelpImg{
+        width: 100%;
+    }
+    .container_whelp_right{
+        max-width: 540px;
+        padding: 0 20px; 
+    }
+    .sectionDoit_container_center{
+        padding: 0 20px;
+    }
+    .sectionGetbusiness_container_left{
+        max-width: 450px;
+        padding: 0 20px;
+    }
+    .courier{
+        max-width: 550px;
+        padding: 25px;
+    }
+    .growBlock{
+        flex-wrap: wrap;
+    }
+    .imgcard{
+        max-width: 450px;
+        padding: 0 20px;
+        margin: auto;
+    }
+    .sectionGetbusiness_container_right_img{
+        max-width: 600px;
+    }
+    .img_right{
+        width: 100%;
+    }
+    .growBlock{
+        flex-wrap: wrap;
+    }
+    .growBlockcard{
+        width: 300px;
+        margin: auto;
+    }
+}
+@media (max-width: 410px){
+    
+    
+    .tipsImgcard{
+        max-width: 300px;
+    }
+    .tipsImg{
+        width: 100%;
+    }
+    .webinarDescription{
+        padding: 0 20px;
+    }
+    .comesTtitle{
+        padding: 30px 20px;
+    }
+    .whelp_descriptionTitle{
+        text-align: center; 
+    }
+    .nav_logo{
+        align-items: center;
+    }
+    .nav_logo a svg{
+        max-width: 80px ;
+    }
+    .sidenav{
+        max-width: 30px;
+        display: flex;
+        align-items: center;
+    }
+    .sidenav .navBtn{
+        width: 25px ;
+    }
+    
 }
